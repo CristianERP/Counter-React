@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: rgb(222, 239, 248);
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+main{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  letter-spacing: 0.1em;
+  font-size: 4em;
+}
+span{
+  font-size: 5em;
+  font-weight: 600;
+}
+.container-buttons{
+  margin-top: 3em;
+}
+button{
+  background: none;
+  padding: 4px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: larger;
+  letter-spacing: 0.2em;
+  transition: 0.3s ease-in-out;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+  background: black;
+  color: white
+}
+
+.text-increment{
+  color:green;
+}
+.text-decrement{
+  color: red;
+}
+.text-reset{
+  color: black;
 }
